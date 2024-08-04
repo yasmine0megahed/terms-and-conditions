@@ -10,13 +10,22 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Document</title>
     <style>
+        @font-face {
+            font-family: "DIN 2014";
+            src: url("/font/2a2b767302dad0d292294c13d63a0c5f.woff") format("woff"),
+                url("/font/2a2b767302dad0d292294c13d63a0c5f.woff2") format("woff2");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
         :root {
             --color-1: #191b36;
             --color-2: #40458b;
         }
 
         body {
-            font-family: Georgia, serif;
+            font-family: "DIN 2014";
         }
 
         .main_container {
@@ -28,7 +37,7 @@
             color: var(--color-1);
             font-size: 20px;
             font-weight: 800;
-
+            margin-left: 10px;
             text-align: center;
             border-bottom: 1px solid var(--color-1);
             height: auto;
@@ -59,9 +68,6 @@
             margin-bottom: 10px;
         }
 
-
-
-
         .footer {
             /* margin-top: 20px; */
             color: var(--color-1);
@@ -77,9 +83,13 @@
             margin-left: 10px;
         }
 
+        .copyRight {
+            padding-top: 12px;
+        }
+
         @media only screen and (min-width: 600px) {
             .header {
-                padding-top: 20px;
+                padding-top: 12px;
             }
         }
     </style>
@@ -90,13 +100,14 @@
         <!-- header -->
         <div class=" d-flex justify-content-center ">
             <!-- terms icons -->
-            <img src="./agreement.png" alt="terms and conditions image" width="80px" height="80px">
+            <img src="./wr.jpg" alt="terms and conditions image" width="60px" height="60px">
+            <!-- <img src="./agreement.png" alt="terms and conditions image" width="80px" height="80px"> -->
 
             <!-- terms header -->
             <div class=" header py-auto">
                 Terms and Conditions for Loyalty Application
             </div>
-
+            <!-- <img src="./wr.jpg" alt="terms and conditions image" width="80px" height="80px"> -->
         </div>
         <!-- terms content -->
         <div class="terms_container">
@@ -117,7 +128,8 @@
             <!-- term 2 -->
             <div>
                 <span class="check_mark_icons">
-                    <i class="bi bi-ban"></i>
+                    <!-- <i class="bi bi-list-check"></i> -->
+                    <i class="bi bi-check2-square"></i>
                 </span>
                 <span class="terms_title">
                     Eligibility
@@ -160,7 +172,8 @@
             <!-- term 5 -->
             <div>
                 <span class="check_mark_icons">
-                    <i class="bi bi-check2-square"></i>
+                    <i class="bi bi-list-check"></i>
+                    <!-- <i class="bi bi-check2-square"></i> -->
                 </span>
                 <span class="terms_title">
                     Use of App
@@ -303,11 +316,13 @@
         </div>
         <!-- footer -->
         <div class="footer d-flex justify-content-center">
-            &#xA9; Copyright 2024.Powered by
-            <span class="wr_logo">
-                <img src="./wr.jpg" alt="" width="14px" height="14px">
+            <span class="copyRight">
+                &#xA9; Copyright 2024.Powered by
             </span>
-            <span class="wr_text">WordReword</span>
+            <span class="wr_logo">
+                <img src="./wr_2.png" alt="" width="150px" height="50px">
+            </span>
+            <!-- <span class="wr_text">WordReward</span> -->
 
         </div>
 
